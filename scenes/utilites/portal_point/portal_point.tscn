@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmv18td8h3n3b"]
+
+[ext_resource type="Script" path="res://scenes/utilites/portal_point/portal_point.gd" id="1_5a274"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ye8h"]
+
+[node name="PortalPoint" type="Area2D"]
+script = ExtResource("1_5a274")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1ye8h")
