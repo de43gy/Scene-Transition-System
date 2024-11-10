@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="Scene Transition System"
+config/tags=PackedStringArray("in_development", "my_project", "prototype")
 config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://scene-transition-system.png"
 
 [file_customization]
 
