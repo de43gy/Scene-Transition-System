@@ -15,11 +15,17 @@ config/tags=PackedStringArray("in_development", "my_project", "prototype")
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://scene-transition-system.png"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/portal_system/plugin.cfg")
+
 [file_customization]
 
 folder_colors={
+"res://addons/": "red",
 "res://scenes/": "yellow",
-"res://scenes/ui/": "yellow"
+"res://scenes/ui/": "yellow",
+"res://scripts/": "pink"
 }
 
 [rendering]

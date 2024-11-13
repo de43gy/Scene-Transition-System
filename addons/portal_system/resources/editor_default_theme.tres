@@ -1,0 +1,30 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://dek2w7xnj7nuu"]
+
+[ext_resource type="StyleBox" uid="uid://l0vimm6ni1l6" path="res://addons/portal_system/resources/button_normal_style_box_flat.tres" id="1_ax3fk"]
+[ext_resource type="StyleBox" uid="uid://5xem42wce7wv" path="res://addons/portal_system/resources/button_hover_style_box_flat.tres" id="1_jcojh"]
+[ext_resource type="StyleBox" uid="uid://c8g8etmwdhxwj" path="res://addons/portal_system/resources/panel_style_box_flat.tres" id="1_ydeb4"]
+[ext_resource type="StyleBox" uid="uid://1o72qpdce88e" path="res://addons/portal_system/resources/button_pressed_style_box_flat.tres" id="3_hmc6n"]
+[ext_resource type="StyleBox" uid="uid://0p5a7vdiaieh" path="res://addons/portal_system/resources/itemlist_panel_style_box_flat.tres" id="4_horyk"]
+[ext_resource type="StyleBox" uid="uid://c5pfxkn3f2nbg" path="res://addons/portal_system/resources/lineedit_normal_style_box_flat.tres" id="4_ojdk0"]
+[ext_resource type="StyleBox" uid="uid://cyqwonwpy60hr" path="res://addons/portal_system/resources/hseparator_separator_style_box_line.tres" id="4_w118w"]
+
+[resource]
+default_font_size = 14
+Button/colors/font_color = Color(0.9, 0.9, 0.9, 1)
+Button/colors/icon_hover_color = Color(1, 1, 1, 1)
+Button/constants/minimum_height = 30
+Button/constants/minimum_width = 100
+Button/styles/hover = ExtResource("1_jcojh")
+Button/styles/normal = ExtResource("1_ax3fk")
+Button/styles/pressed = ExtResource("3_hmc6n")
+HBoxContainer/constants/separation = 8
+HSeparator/styles/separator = ExtResource("4_w118w")
+ItemList/colors/font_color = Color(0.9, 0.9, 0.9, 1)
+ItemList/colors/font_selected_color = Color(1, 1, 1, 1)
+ItemList/colors/guide_color = Color(0.3, 0.3, 0.3, 0.5)
+ItemList/constants/minimum_height = 150
+ItemList/styles/panel = ExtResource("4_horyk")
+Label/colors/font_color = Color(0.9, 0.9, 0.9, 1)
+LineEdit/styles/normal = ExtResource("4_ojdk0")
+Panel/styles/panel = ExtResource("1_ydeb4")
+VBoxContainer/constants/separation = 12

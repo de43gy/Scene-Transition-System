@@ -1,0 +1,107 @@
+[gd_scene load_steps=3 format=3 uid="uid://dicetrit48t58"]
+
+[ext_resource type="Script" path="res://addons/portal_system/scripts/portal_editor.gd" id="1_ipk6i"]
+[ext_resource type="Theme" uid="uid://dek2w7xnj7nuu" path="res://addons/portal_system/resources/editor_default_theme.tres" id="1_muj3j"]
+
+[node name="PortalEditor" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_muj3j")
+script = ExtResource("1_ipk6i")
+
+[node name="MainContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="HeaderSection" type="HBoxContainer" parent="MainContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PortalSystem" type="Label" parent="MainContainer/VBoxContainer/HeaderSection"]
+layout_mode = 2
+text = "Portal System"
+
+[node name="HSeparator" type="HSeparator" parent="MainContainer/VBoxContainer/HeaderSection"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PortalSection" type="VBoxContainer" parent="MainContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PortalsInScene" type="Label" parent="MainContainer/VBoxContainer/PortalSection"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="MainContainer/VBoxContainer/PortalSection"]
+layout_mode = 2
+
+[node name="PortalList" type="ItemList" parent="MainContainer/VBoxContainer/PortalSection/PanelContainer"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ConnectionSection" type="VBoxContainer" parent="MainContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TargetScene" type="Label" parent="MainContainer/VBoxContainer/ConnectionSection"]
+layout_mode = 2
+text = "Target Scene"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainContainer/VBoxContainer/ConnectionSection"]
+layout_mode = 2
+
+[node name="ScenePathEdit" type="LineEdit" parent="MainContainer/VBoxContainer/ConnectionSection/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+editable = false
+
+[node name="SelectSceneButton" type="Button" parent="MainContainer/VBoxContainer/ConnectionSection/HBoxContainer"]
+layout_mode = 2
+text = "Select Scene"
+
+[node name="SpawnSection" type="VBoxContainer" parent="MainContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="SpawnPoints" type="Label" parent="MainContainer/VBoxContainer/SpawnSection"]
+layout_mode = 2
+text = "Spawn Points"
+
+[node name="PanelContainer" type="PanelContainer" parent="MainContainer/VBoxContainer/SpawnSection"]
+layout_mode = 2
+
+[node name="SpawnList" type="ItemList" parent="MainContainer/VBoxContainer/SpawnSection/PanelContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ButtonSection" type="HBoxContainer" parent="MainContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="ConnectButton" type="Button" parent="MainContainer/VBoxContainer/ButtonSection"]
+layout_mode = 2
+disabled = true
+text = "Connect"
+
+[node name="DisconnectButton" type="Button" parent="MainContainer/VBoxContainer/ButtonSection"]
+layout_mode = 2
+disabled = true
+text = "Disconnect"
+
+[node name="StatusSection" type="PanelContainer" parent="MainContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="StatusLabel" type="Label" parent="MainContainer/VBoxContainer/StatusSection"]
+layout_mode = 2
